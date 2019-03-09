@@ -1,0 +1,213 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #d9534f;
+}
+
+main {
+    margin-top:4em;
+}
+
+.container {
+    max-width: 500px;
+    min-width: 350px;
+}
+
+
+h1, h2 {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+h1 {
+    font-weight: 700;   
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    text-transform: capitalize;
+    display: flex;
+    margin: 1em 0;
+    padding: 0 1em;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    justify-content: space-between;
+}
+
+li:hover{
+    background-color:white;
+}
+
+ul li label{
+    padding-right: .6em; 
+    position: absolute;
+    margin-top: 10px;
+}
+
+.listInfo label, input {
+    cursor: pointer;
+}
+
+.listInfo {
+    width: 100%;
+    cursor: pointer;
+    padding:1em 0;
+}
+
+.listRemove {
+    cursor: pointer;
+    padding:1em 0;
+}
+
+input[type=checkbox] {
+    transform: scale(1.2);
+    margin-right: .6em;
+}
+  
+input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    visibility: hidden;
+    margin-top: 10px;
+}
+  
+input[type=checkbox]:after {
+    content: " ";
+    background-color: #fff;
+    display: inline-block;
+    color: #1e824c;
+    width: 22px;
+    height: 25px;
+    visibility: visible;
+    border: 1px solid black;
+    padding-left: 3px;
+    border-radius: 2px;
+}
+  
+input[type=checkbox]:checked:after {
+    content: "\2714";
+}
+
+input[type="text"] {
+    border:2px solid #ffffff;
+    border-radius: 4px 0 0 4px;
+    padding: 0 1.2em;
+    color:black;
+    width: 100%;
+}
+
+::placeholder {
+    color:black;
+}
+
+.newTaskButton {
+    color:white;
+    padding: .6em 1.2em;
+    background-color: transparent;
+    border-radius: 0 4px 4px 0;
+    border: 2px solid white;
+    margin-left: 6px;
+    transition: all .2s;
+}
+
+.newTaskButton:hover {
+    background-color: white;
+    color:#d9534f;
+}
+
+#newTaskForm {
+    width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+}
+
+i {
+    vertical-align: middle;
+}
+
+.sorting{
+    display: flex;
+    color:#d9534f;
+    padding: .4em 0;
+    justify-content: space-between;
+}
+
+.sortingButtons button:nth-child(1){
+    margin-right: .4em;
+}
+
+#resetList {
+    border:2px solid white;
+    background: transparent;
+    border-radius: 4px;
+    padding:1.2em 0;
+    color:white;
+    margin: 2em 0;
+    width: 100%;
+    transition: all .2s;
+}
+
+#resetList:hover {
+    background-color: white;
+    color:#d9534f;
+}
+
+.sort-btn {
+    border: none;
+    background: transparent;
+    border-radius: 4px;
+    padding: 4px 6px;
+    color: white;
+    right: 0;
+    border: 2px solid white;
+    margin-bottom: .6em;
+    transition: all .2s;
+}
+
+.sort-btn:hover {
+    background-color: white;
+    color:#d9534f;
+}
+
+.activeSorting {
+    background-color: white;
+    color:#d9534f;
+}
+
+.remove-btn {
+    border: none;
+    background: transparent;
+    margin-top: 8px;
+}
+
+.remove-btn i {
+    vertical-align: middle;
+}
+
+.remove-btn:hover {
+    color: #d9534f;
+}
+
+#done{
+    color: white;
+    padding: .4em 0;
+}
+
+#doneList li label{
+    text-decoration: line-through;
+}
+
+#doneList li {
+    color:#1e824c;
+}
+
